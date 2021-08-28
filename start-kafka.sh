@@ -101,9 +101,9 @@ echo "" >> "$KAFKA_HOME/config/server.properties"
 
 (
     function updateConfig() {
-        key=$1
-        value=$2
-        file=$3
+        local key=$1
+        local value=$2
+        local file=$3
 
         # Omit $value here, in case there is sensitive information
         echo "[Configuring] '$key' in '$file'"
