@@ -1,8 +1,8 @@
 FROM azul/zulu-openjdk-alpine:8u322-8.60.0.21
 
-ARG kafka_version=3.1.0
+ARG kafka_version=3.2.2
 ARG scala_version=2.13
-ARG glibc_version=2.34-r0
+ARG glibc_version=2.35-r0
 ARG vcs_ref=unspecified
 ARG build_date=unspecified
 
