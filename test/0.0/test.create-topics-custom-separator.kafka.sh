@@ -26,7 +26,7 @@ testCreateTopicsCustomSeparator() {
 
 		echo "Validating topic '$TOPIC'"
 
-		EXISTS=$(/opt/kafka/bin/kafka-topics.sh --zookeeper "$KAFKA_ZOOKEEPER_CONNECT" --list --topic "$TOPIC")
+		EXISTS=$(/opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list --topic "$TOPIC")
 		if [[ "$EXISTS" != "$TOPIC" ]]; then
 			echo "$TOPIC topic not created"
 			return 1
