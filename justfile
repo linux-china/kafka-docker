@@ -1,2 +1,2 @@
 build:
-   docker build -t wurstmeister/kafka:2.13-3.2.2 .
+   docker build -t wurstmeister/kafka:2.13-3.3.0 .
